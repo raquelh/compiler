@@ -192,8 +192,8 @@ class Automato(object):
 
 
 
-if __name__ == '__main__':
-    Automato()
+
+
 
 
 
