@@ -65,6 +65,7 @@ class AnaliseLexica(object):
             self.__reconheceestado(i)
             self.__novalinha(i)
 
+
         else:
             raise ErroLexico(1, i, self.linha, self.coluna)
 
@@ -142,5 +143,6 @@ class AnaliseLexica(object):
             print(self.finais)
             raise ErroLexico(3, i, self.linha, self.coluna)
 
-        self.tabela.reconhece(self.estado, self.linha)
+        self.tabela.reconhece(self.estado, self.linha, self.token)
         self.estado = 0
+        self.token.clear()
