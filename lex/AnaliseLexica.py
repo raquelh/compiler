@@ -142,7 +142,8 @@ class AnaliseLexica(object):
         if self.estado not in self.finais:
             print(self.finais)
             raise ErroLexico(3, i, self.linha, self.coluna)
-
-        self.tabela.reconhece(self.estado, self.linha, self.token)
+        
+        a = ''.join(self.token)
+        self.tabela.reconhece(self.estado, self.linha, a)
         self.estado = 0
         self.token.clear()

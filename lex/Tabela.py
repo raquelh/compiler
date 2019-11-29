@@ -10,4 +10,5 @@ class Tabela(list):
             :param estado: Estado reconhecido
             :param linha: Linha onde o estado foi reconhecido
         """
+   
         self.append((estado, linha, token))
