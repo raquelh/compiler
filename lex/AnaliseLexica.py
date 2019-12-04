@@ -8,7 +8,7 @@ class AnaliseLexica(object):
     """
 
     separadores = ['\n', ' ']
-    separadoresTokens = ['(', ')', '+', '-', '.']
+    separadoresTokens = ['(', ')', '+', '-', '.', '=']
 
     automato = ImportaAutomato()
     tabela = Tabela()
