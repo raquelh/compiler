@@ -7,8 +7,8 @@ class AnaliseLexica(object):
     """ Classe de Implementação da etapa de Análise Léxica
     """
 
-    separadores = ['\n', ' ']
-    separadoresTokens = ['(', ')', '+', '-', '.', '=']
+    separadores = [' ','\n']
+    separadoresTokens = ['(', ')', '+', '-', '.', '=',';']
 
     automato = ImportaAutomato()
     tabela = Tabela()

@@ -1,0 +1,24 @@
+<S'> ::= <S>
+S' -> S
+
+<S> ::= select from * <TABLE> where <VAR> = <DIG>| CREATE TABLE <TABLE> | INSERT INTO <TABLE> VALUES (<VAR>) | DELETE FROM <TABLE> WHERE <VAR> = <DIG> | UPDATE <TABLE> WHERE <VAR> = <DIG>
+<TABLE> ::= var
+<VAR> :: = var
+<DIG> :: = dig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+E' -> E
+E -> select from *  TABLE where VAR = DIG
+E -> create table TABLE
+E -> insert into TABLE values (VAR)
+E -> delete from TABLE where VAR = DIG
+E -> update TABLE where VAR = DIG
+TABLE -> var
+VAR -> var
+DIG -> n
+
+
+http://jsmachines.sourceforge.net/machines/slr.html
