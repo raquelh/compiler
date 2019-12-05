@@ -8,7 +8,7 @@ class AnaliseLexica(object):
     """
 
     separadores = [' ','\n']
-    separadoresTokens = ['(', ')', '+', '-', '.', '=',';']
+    separadoresTokens = ['(', ')', '+', '-', '.', '=',';', ',']
 
     automato = ImportaAutomato()
     tabela = Tabela()
@@ -34,7 +34,7 @@ class AnaliseLexica(object):
         self.linha = 0
         self.coluna = 0
 
-        # self.__printregras()
+        #self.__printregras()
 
         self.__percorrecodigo(codigo)
 
@@ -142,7 +142,7 @@ class AnaliseLexica(object):
         if self.estado not in self.finais:
             print(self.finais)
             raise ErroLexico(3, i, self.linha, self.coluna)
-        
+
         a = ''.join(self.token)
         self.tabela.reconhece(self.estado, self.linha, a)
         self.estado = 0
