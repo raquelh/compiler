@@ -1,5 +1,5 @@
 <S'> ::= <S>
-<S> ::= select from * <TABLE> where <VAR> = <DIG>|
+<S> ::= select from * <TABLE> where <VAR> =<DIG>|
 <S> ::= CREATE TABLE <TABLE> |
 <S> ::= INSERT INTO <TABLE> VALUES (<DIG>) |
 <S> ::= DELETE FROM <TABLE> WHERE <VAR> = <DIG> |
