@@ -1,9 +1,10 @@
-<S'> ::= <S>
-<S> ::= select from * <TABLE> where <VAR> =<DIG>|
-<S> ::= CREATE TABLE <TABLE> |
-<S> ::= INSERT INTO <TABLE> VALUES (<DIG>) |
-<S> ::= DELETE FROM <TABLE> WHERE <VAR> = <DIG> |
-<S> ::= UPDATE <TABLE> WHERE <VAR> = <DIG>
-<TABLE> ::= var
-<VAR> :: = var
-<DIG> :: = dig
+0- S' -> S
+1- S -> select from * VAR where VAR DIG
+2- S -> create table VAR
+3- S -> insert into VAR values VAU
+4- S -> delete from VAR where VAR DIG
+5- S -> update VAR where VAR DIG
+6- VAR -> var
+7- DIG -> dig
+8- VAU -> vau
+

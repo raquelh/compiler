@@ -1,6 +1,7 @@
 from Automato import ImportaAutomato
 from Excecoes import ErroLexico
 from Tabela import Tabela
+import numpy as np
 
 
 class AnaliseLexica(object):

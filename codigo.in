@@ -1,3 +1,5 @@
 DELETE FROM produtos WHERE codigo =3
-INSERT INTO produtos VALUES (2)
-SELECT nome FROM produtos WHERE codigo =1
+INSERT INTO produtos VALUES (2,3,4)
+SELECT nome FROM * produtos WHERE codigo =1
+CREATE TABLE joinha
+UPDATE joinha WHERE beleza =8
