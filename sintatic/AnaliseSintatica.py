@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 import numpy as np
+from percorre import percorre
 #from Tabela import Tabela
 
 class AnaliseSintatica(object):
@@ -11,25 +12,27 @@ class AnaliseSintatica(object):
     fita = np.array(self.tabela)
     fita = fita[:,0]
     '''
+
+
     fita = ['129' '112' '69' '127' '69' '76' '130' '114' '69' '133' '73' '131' '69'
     '112' '58' '69' '127' '69' '76' '128' '124' '69' '132' '69' '127' '69'
     '76']
     parse = pd.read_csv('tableParse.csv')
-    #print(parse.shape)
-    print(parse.loc[0,:].shape)
 
+    index = percorre()
     def __init__(self, *args):
-        percorrefita()
+        super(AnaliseSintatica, self).__init__(*args)
+        self.fita = fita
+        self.parse = parse
+        self.index = index
 
-    def percorrefita(self):
-        for i in self.fita:
-           percorreParse(i)
+    def funcao(self):
+        print(self.index.percorrefita())
+    
 
-    def percorreParse(self, i):
-       for k in self.parse.loc[0,:]:
-           if k == i:
-               print(k, i)
-
+    #print(parse.shape)
+    #print(parse.loc[0,:].shape)
+    #index = percorre()
     #print(parse.columns.values)
     #print(parse)
     #acao = parse
