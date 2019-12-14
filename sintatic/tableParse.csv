@@ -1,5 +1,5 @@
 state,select,from,*,where,create,table,insert,into,values,delete,update,var,dig,vau,$,S',S,VAR,DIG,VAU
-,131,112,58,127,128,124,130,114,133,129,132,69,76,73,,,,,,
+,131,112,58,127,128,124,130,114,133,129,132,69,76,73,$,S’,S,VAR,DIG,VAU
 0,s2, , , ,s3, ,s4, , ,s5,s6, , , , , ,1, , , 
 1, , , , , , , , , , , , , , ,acc, , , , , 
 2, ,s7, , , , , , , , , , , , , , , , , , 

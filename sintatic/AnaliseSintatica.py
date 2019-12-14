@@ -26,8 +26,9 @@ class AnaliseSintatica(object):
         self.parse = parse
         self.index = index
 
-    def funcao(self):
-        print(self.index.percorrefita())
+    if __name__ == '__main__':
+        self.index.percorrefita()
+        #main()  
     
 
     #print(parse.shape)
