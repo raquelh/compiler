@@ -1,17 +1,17 @@
 import pandas as pd
 import sys
 import numpy as np
-from percorre import percorre
+#from percorre import percorre
 #from Tabela import Tabela
 
-class AnaliseSintatica(object):
+'''class AnaliseSintatica(object):
     """ Classe de Implementação da etapa de Análise Sintática
     """
 
-    '''tabela = Tabela()
+    tabela = Tabela()
     fita = np.array(self.tabela)
     fita = fita[:,0]
-    '''
+    
 
 
     fita = ['129' '112' '69' '127' '69' '76' '130' '114' '69' '133' '73' '131' '69'
@@ -28,7 +28,7 @@ class AnaliseSintatica(object):
 
     if __name__ == '__main__':
         self.index.percorrefita()
-        #main()  
+        #main()  '''
     
 
     #print(parse.shape)
@@ -43,3 +43,15 @@ class AnaliseSintatica(object):
     #print(saltos.columns.values[-5:])
     
     #percorrefita()
+
+
+def reduz():
+    n_prod = np.genfromtxt('numeroProd.txt', dtype = 'str', delimiter='-')
+    print(n_prod)
+
+pilha = [0]
+fita = ['129', '112',  '69', '127', '69', '76', '130', '114', '69', '133', '73', '131', '69',
+    '112', '58', '69', '127', '69', '76', '128', '124', '69', '132', '69', '127', '69',
+    '76']
+parse = pd.read_csv('tableParse.csv')
+state = 1
