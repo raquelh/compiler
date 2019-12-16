@@ -1,5 +1,0 @@
-vab="bomdia"
-vn=3.5 + 5
-va=5
-while va > 0:
-va=va - 1 
