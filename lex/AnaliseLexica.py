@@ -133,6 +133,11 @@ class AnaliseLexica(object):
         print('\n\nTABELA DE SIMBOLOS:\n')
         for i in self.tabela:
             print(i)
+        a = np.array(self.tabela)
+        b = a[:, 0]
+        #b = np.split(a, ' ')
+        b = list(b)
+        print(b)
 
 
     def __reconheceestado(self, i):
@@ -143,6 +148,8 @@ class AnaliseLexica(object):
         if self.estado not in self.finais:
             print(self.finais)
             raise ErroLexico(3, i, self.linha, self.coluna)
+        if i == '\n':
+            self.tabela.reconhece('$',self.linha, '$')
 
         a = ''.join(self.token)
         self.tabela.reconhece(self.estado, self.linha, a)
