@@ -42,6 +42,7 @@ class AnaliseLexica(object):
         self.__printtabela()
 
 
+
     def __percorrecodigo(self, codigo):
         """ Executa um laço nos caracteres do código fonte
             testanto os caracteres um a um.
@@ -138,7 +139,6 @@ class AnaliseLexica(object):
         #b = np.split(a, ' ')
         b = list(b)
         print(b)
-
 
     def __reconheceestado(self, i):
         """ Insere um estado reconhecido na tabela de símbolos
